@@ -1,8 +1,4 @@
-# Work Day Scheduler Starter Code
-
-
-![Thumbnail (9)](https://user-images.githubusercontent.com/77648727/109594170-30c17f00-7ac7-11eb-935f-63659f27e422.png)
-
+![Frame 25](https://user-images.githubusercontent.com/77648727/109900819-d05c4a00-7c4c-11eb-916f-c9478f3f9cea.png)
 
 ## Name
 
