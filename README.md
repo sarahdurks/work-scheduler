@@ -20,16 +20,15 @@ See live application [here]
 - [x] Moment.js
 
 The following was completed:
-- [x] Moment js pulled in
+- [x] Moment.js leveraged
 - [x] Current hour compared to planner hour to set color state of time block
 - [x] Items saved in local storage, user can refresh
 
 
 The following is pending:
-- [] Verfification of color-coding working throughout day
-- [] Making clock in the header live
-- [] Dealing with "tomorrow" calendar handling
-- [] Some media queries/device adjustments
+- Making clock in the header live
+- Dealing with "tomorrow" calendar handling
+- Some media queries/device adjustments
 
 ### User Story 📖
 > AS AN employee with a busy schedule   
