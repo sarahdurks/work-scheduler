@@ -29,7 +29,7 @@ $().ready(function () {
     localStorage.setItem(planTime, planText); // Store entry to be refrenced by time id
   }
   // Save user entry on button click
-  $(".saveBtn").on("click", saveEntry);
+  $(".savePlanButton").on("click", saveEntry);
 
   // Grab whatever is in local storage for that hour
   checkSchedule();

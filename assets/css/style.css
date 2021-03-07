@@ -1,8 +1,5 @@
-
-
-
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   line-height: 1.2;
   background-color: lightblue;
@@ -25,12 +22,12 @@ body {
   border-top: 1px dashed #000000;
 }
 
-.time-block{
+.time-block {
   text-align: center;
   border-radius: 15px;
 }
 
-.description{
+.description {
   white-space: pre-wrap;
 }
 .row {
@@ -50,10 +47,7 @@ textarea {
 }
 /* buttons */
 
-
-
 button {
-
   background: #0ca38f;
   background-image: -webkit-linear-gradient(top, #0ca38f, #2980b9);
   background-image: -moz-linear-gradient(top, #0ca38f, #2980b9);
@@ -65,10 +59,8 @@ button {
   border-radius: 8px;
   color: #ffffff;
   font-size: large;
-  min-height: fit-content;
-  min-width:fit-content;
   border: solid #1f628d 1px;
-  display: inline-flex;
+  flex-grow: inherit;
 }
 
 button:hover {
@@ -79,8 +71,8 @@ button:hover {
   background-image: -o-linear-gradient(top, #2980b9, #0ca38f);
   background-image: linear-gradient(to bottom, #2980b9, #0ca38f);
   text-decoration: #ffffff;
+  flex-grow: inherit;
 }
-
 
 /* format based on time state */
 .past {
@@ -97,4 +89,3 @@ button:hover {
   background-color: #7ce67c;
   color: black;
 }
-
