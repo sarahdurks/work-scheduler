@@ -4,7 +4,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
-  line-height: 1;
+  line-height: 1.2;
   background-color: lightblue;
 }
 
@@ -12,7 +12,6 @@ body {
   text-align: center;
   background-color: transparent;
   color: black;
-  border-radius: 0;
   border-bottom: 5px solid black;
 }
 /* Time, rows, inputs */
@@ -20,7 +19,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   font-size: large;
-  padding: 20px 20px 20px 20px;
+  padding: 30px 20px 20px 20px;
   align-content: center;
   vertical-align: middle;
   border-top: 1px dashed #000000;
@@ -36,8 +35,9 @@ body {
 }
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  min-height: 80px;
   border-top: 1px solid white;
+  flex-wrap: wrap;
 }
 textarea {
   background: transparent;
@@ -46,9 +46,12 @@ textarea {
   color: #000000;
   min-height: fit-content;
   border-left: 1px solid black;
-  padding: 10px;
+  padding: 5px;
 }
 /* buttons */
+
+
+
 button {
 
   background: #0ca38f;
@@ -62,9 +65,10 @@ button {
   border-radius: 8px;
   color: #ffffff;
   font-size: large;
+  min-height: fit-content;
   min-width:fit-content;
-  padding: 20px 20px 20px 20px;
   border: solid #1f628d 1px;
+  display: inline-flex;
 }
 
 button:hover {
@@ -74,7 +78,7 @@ button:hover {
   background-image: -ms-linear-gradient(top, #2980b9, #0ca38f);
   background-image: -o-linear-gradient(top, #2980b9, #0ca38f);
   background-image: linear-gradient(to bottom, #2980b9, #0ca38f);
-  text-decoration: none;
+  text-decoration: #ffffff;
 }
 
 

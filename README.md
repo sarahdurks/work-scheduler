@@ -17,14 +17,19 @@ See live application [here]
 - [x] CSS
 - [x] JavaScript
 - [x] jQuery
+- [x] Moment.js
 
 The following was completed:
+- [x] Moment js pulled in
+- [x] Current hour compared to planner hour to set color state of time block
+- [x] Items saved in local storage, user can refresh
 
-- xx
 
 The following is pending:
-
-- xx
+- [] Verfification of color-coding working throughout day
+- [] Making clock in the header live
+- [] Dealing with "tomorrow" calendar handling
+- [] Some media queries/device adjustments
 
 ### User Story 📖
 > AS AN employee with a busy schedule   
@@ -52,5 +57,7 @@ The following is pending:
 
 ## Authors, Acknowledgement, & Resources 🤝
 
-https://momentjs.com/docs/#/-project-status/
-https://momentjs.com/
+[MomentJS Documentation](https://momentjs.com/)    
+[Devhints.io for Moment.js](https://devhints.io/moment)    
+[Bootstrap documentation](https://getbootstrap.com/docs/4.0/layout/grid/)    
+[jQuery Documentation](https://learn.jquery.com/using-jquery-core/document-ready/)    
