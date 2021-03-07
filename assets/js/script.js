@@ -1,19 +1,19 @@
 $().ready(function () {
   function getTimeNow() {
-    var todayTime = moment().format("MMMM Do YYYY, h:mm a");
+    var todayTime = moment().format("MMMM Do, h:mm a");
     $("#currentDay").text(todayTime);
   }
-  getTimeNow(); // when DOM ready, get moment js format, show on page
+  getTimeNow(); // when DOM ready, get moment js, show on page
 
-  //time comparison to set color state
+  // Time comparison, then set color state
   checkHourState();
   function checkHourState() {
     var currentHour = moment().format("H"); //uses 24 hr counting to match our hours
     $(".description").each(function () {
-      var plannerHour = parseInt($(this).attr("id")); //take planner id as number
+      var plannerHour = parseInt($(this).attr("id")); // take planner id as number to compare to moment js time
       if (plannerHour < currentHour) {
         $(this).addClass("past");
-      } else if (plannerHour === currentHour) {
+      } else if (plannerHour == currentHour) { // this seems to work? but may be inexact, i think works because of other conditions. didn't work with ===
         $(this).removeClass("past").addClass("present");
       } else if (plannerHour > currentHour) {
         $(this).removeClass("past").addClass("future");
@@ -22,17 +22,17 @@ $().ready(function () {
     });
   }
 
-  //save input to local storage
+  // Save planner input to local storage
   function saveEntry() {
     var savedPlan = $(this);
-    var planTime = savedPlan.siblings(".description").attr("id"); //grabs id of row (=time) relevant to actual input
+    var planTime = savedPlan.siblings(".description").attr("id"); // Grabs id of row (=time) relevant to actual input
     var planText = savedPlan.siblings(".description").val();
-    localStorage.setItem(planTime, planText); //store entry to be refrenced by time id
+    localStorage.setItem(planTime, planText); // Store entry to be refrenced by time id
   }
-  //on click save user entry
+  // Save user entry on button click
   $(".saveBtn").on("click", saveEntry);
 
-  //grab whatever is in local storage for that hour
+  // Grab whatever is in local storage for that hour
   checkSchedule();
 
   function checkSchedule() {
@@ -47,9 +47,8 @@ $().ready(function () {
     $("#17").val(localStorage.getItem("17"));
   }
 });
-//make sure local storage checked on page load
+// Make sure local storage checked on page load to show plans
 window.onload = checkSchedule();
 
-
+// TO DO:
 // Future to do: make clock live updating / run update function
-//mobile responsive cleanup
