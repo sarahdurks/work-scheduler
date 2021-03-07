@@ -12,12 +12,11 @@ $().ready(function () {
     $(".description").each(function () {
       var plannerHour = parseInt($(this).attr("id")); // take planner id as number to compare to moment js time
       if (plannerHour < currentHour) {
-        $(this).addClass("past");
-      } else if (plannerHour == currentHour) { // this seems to work? but may be inexact, i think works because of other conditions. didn't work with ===
-        $(this).removeClass("past").addClass("present");
+        $(this).addClass("past"); 
+      } else if (plannerHour == currentHour) {
+        $(this).addClass("present");
       } else if (plannerHour > currentHour) {
-        $(this).removeClass("past").addClass("future");
-        $(this).removeClass("present").addClass("future");
+        $(this).addClass("future");
       }
     });
   }
